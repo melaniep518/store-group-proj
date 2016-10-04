@@ -11,6 +11,7 @@ var App = React.createClass({
     return (
       <div>
           <Nav />
+          <Logo />
           {this.props.children}
       </div>
     )
@@ -85,13 +86,13 @@ var Nav = React.createClass({
        {/*RIGHT NAV*/}
       <ul className="nav navbar-nav navbar-right">
         <li><a href="#">Login</a></li>
-          
+
           {/*CART*/}
         <li><a href="#" className="glyphicon glyphicon-shopping-cart"><Link to="menu">Cart</Link></a></li>
 
 
-  
-       
+
+
       </ul>
     </div>{ /*/.navbar-collapse */}
   </div>{ /*/.container-fluid */}
@@ -106,7 +107,7 @@ var Nav = React.createClass({
           <li><Link to="about">About</Link></li>
         </ul>
       */}
-        
+
       </div>
     )
   }
@@ -121,21 +122,21 @@ var Home = React.createClass({
     // console.log('images', data.getImages())
 	},
 	render: function() {
-		
+
 	  return (
       <div>
         <h1>Welcome To Our Gallery Website</h1>
         <h4>BROWSE AROUND TO SEE WHAT WE HAVE IN STORE FOR YOU.</h4>
 
 
-         {/*BOOTSTRAP BOTTONS*/} 
+         {/*BOOTSTRAP BOTTONS*/}
         <button className="">Luis</button>
         <button>
           <span className='glyphicon glyphicon-thumbs-up'></span>
         </button>
         <button type="button" className="btn btn-success">Success</button>
 
-         {/* BOOTSTRAP TABLE*/} 
+         {/* BOOTSTRAP TABLE*/}
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
@@ -152,7 +153,7 @@ var Home = React.createClass({
 
 
 
-          {/* BOOTSTRAP TABLE FOR ALL ITEMS*/} 
+          {/* BOOTSTRAP TABLE FOR ALL ITEMS*/}
         <div className="row">
           <div className="col-sm-6 col-md-4">
             <div className="thumbnail">
@@ -201,7 +202,7 @@ var Menu = React.createClass({
 	},
   	render: function() {
   	var arr= [];
- //loops through data   
+ //loops through data
    	for(var product in this.state.menu){
    		arr.push(<h2>{product}</h2>)
   		for(var i=0; i< this.state.menu[product].length;i++){
@@ -237,12 +238,12 @@ var Menu = React.createClass({
           </div>
         </div>
 
-         {/*PRINTS ALL GALLERY*/}  
+         {/*PRINTS ALL GALLERY*/}
         {arr}
       </div>
-  		  
 
-      
+
+
     )
   }
 })
@@ -260,10 +261,10 @@ var About = React.createClass({
         <h1 className="modal-header">About Luis</h1>
         <p className="vertical-container">{this.state.about.restaurant_name}</p>
         <p>{this.state.about.restaurant_slogan}</p>
-        <p>{this.state.about.restaurant_slogan1}</p>  
+        <p>{this.state.about.restaurant_slogan1}</p>
         <h2 className="vertical-container">Contact</h2>
         <p className="main">{this.state.about.restaurant_address}</p>
-        <p>{this.state.about.restaurant_email}</p> 
+        <p>{this.state.about.restaurant_email}</p>
         <p>{this.state.about.restaurant_phone}</p>
       </div>
     )
@@ -283,7 +284,7 @@ var MenuItem = React.createClass({
 		    	<li>{this.props.description}</li>
           <li>{this.props.price}</li>
 	    	</ul>
-        
+
     	</div>
     )
   }
