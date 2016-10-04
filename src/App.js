@@ -4,6 +4,7 @@ import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 require('./index.css');
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
+import HomePage from './home';
 
 
 var App = React.createClass({
@@ -11,6 +12,7 @@ var App = React.createClass({
     return (
       <div>
           <Nav />
+          <HomePage />
           {this.props.children}
       </div>
     )
@@ -121,7 +123,7 @@ var Home = React.createClass({
     // console.log('images', data.getImages())
 	},
   render: function() {
-    
+
     return (
       <div>
         <h1>Welcome To Our Gallery Website</h1>
