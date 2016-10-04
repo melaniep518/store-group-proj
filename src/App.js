@@ -4,6 +4,7 @@ import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 require('./index.css');
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
+import HomePage from './home';
 
 
 var App = React.createClass({
@@ -11,7 +12,7 @@ var App = React.createClass({
     return (
       <div>
           <Nav />
-          <Logo />
+          <HomePage />
           {this.props.children}
       </div>
     )
