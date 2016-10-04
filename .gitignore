@@ -30,6 +30,7 @@ Thumbs.db
 
 # Build Systems #
 ######################
+node_modules/jquery
 node_modules/
 bower_components/
 .sass-cache
