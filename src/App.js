@@ -57,10 +57,10 @@ var Nav = React.createClass({
     { /*Collect the nav links, forms, and other content for toggling */}
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
-        <li className="active"><a href="#"><Link to="/">Home</Link><span className="sr-only">(current)</span></a></li>
-        <li><a href="#"><Link to="about">About</Link></a></li>
-        <li><a href="#"><Link to="menu">New Art</Link></a></li>
-        <li><a href="#"><Link to="menu">Collections</Link></a></li>
+        <li className="active"><Link to="/">Home</Link><span className="sr-only">(current)</span></li>
+        <li><Link to="about">About</Link></li>
+        <li><Link to="/">New Art</Link></li>
+        <li><Link to="/">Collections</Link></li>
 
 
         <li className="dropdown">
@@ -89,7 +89,7 @@ var Nav = React.createClass({
         <li><a href="#">Login</a></li>
 
           {/*CART*/}
-        <li><a href="#" className="glyphicon glyphicon-shopping-cart"><Link to="menu">Cart</Link></a></li>
+        <li><Link to="menu" className="glyphicon glyphicon-shopping-cart">Cart</Link></li>
 
 
 
@@ -116,15 +116,15 @@ var Nav = React.createClass({
 
 var Home = React.createClass({
     getInitialState(){
-    	return ({images:null})
-	},
-	componentWillMount(){
-		// this.setState({images:data.getImages()})
+      return ({images:null})
+  },
+  componentWillMount(){
+    // this.setState({images:data.getImages()})
     // console.log('images', data.getImages())
 	},
-	render: function() {
+  render: function() {
 
-	  return (
+    return (
       <div>
         <h1>Welcome To Our Gallery Website</h1>
         <h4>BROWSE AROUND TO SEE WHAT WE HAVE IN STORE FOR YOU.</h4>
@@ -193,99 +193,43 @@ var Home = React.createClass({
   }
 })
 
-var Menu = React.createClass({
-	getInitialState(){
-		return ({menu:null,images: null})
-	},
-	componentWillMount(){
-		this.setState({menu: data.getMenu()})
-    this.setState({images:data.getImages()})
-	},
-  	render: function() {
-  	var arr= [];
- //loops through data
-   	for(var product in this.state.menu){
-   		arr.push(<h2>{product}</h2>)
-  		for(var i=0; i< this.state.menu[product].length;i++){
-  			arr.push(<MenuItem title= {product} name= {this.state.menu[product][i].name} price={this.state.menu[product][i].price} image={this.state.images[i]} description={this.state.menu[product][i].description} />)
-        console.log(this.state.images[i])
-  		}
-  	}
-    return (
-      <div>
-        <h1>Welcome To Our Gallery Website</h1>
-        <h4>BROWSE AROUND TO SEE WHAT WE HAVE IN STORE FOR YOU.</h4>
-
-
-         {/*BOTTONS*/}
-        <button className="">Luis</button>
-        <button>
-          <span className='glyphicon glyphicon-thumbs-up'></span>
-        </button>
-        <button type="button" className="btn btn-success">Success</button>
-
-         {/*BOOTSTRAP TABLE*/}
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-4">
-              One of three columns
-            </div>
-            <div className="col-sm-4">
-              One of three columns
-            </div>
-            <div className="col-sm-4">
-              One of three columns
-            </div>
-          </div>
-        </div>
-
-         {/*PRINTS ALL GALLERY*/}
-        {arr}
-      </div>
-
-
-
-    )
-  }
-})
 
 var About = React.createClass({
-	getInitialState(){
-		return({about:null})
-	},
-	componentWillMount(){
-		this.setState({about:data.getAbout()})
-	},
+  getInitialState(){
+    return({about:null})
+  },
+  componentWillMount(){
+    this.setState({about:data.description})
+  },
   render: function() {
     return (
       <div >
         <h1 className="modal-header">About Luis</h1>
-        <p className="vertical-container">{this.state.about.restaurant_name}</p>
-        <p>{this.state.about.restaurant_slogan}</p>
-        <p>{this.state.about.restaurant_slogan1}</p>
+        <p className="vertical-container"></p>
+        <p></p>
+        <p></p>
         <h2 className="vertical-container">Contact</h2>
-        <p className="main">{this.state.about.restaurant_address}</p>
-        <p>{this.state.about.restaurant_email}</p>
-        <p>{this.state.about.restaurant_phone}</p>
+        <p className="main"></p>
+        <p></p>
+        <p></p>
       </div>
     )
   }
 })
 
 var MenuItem = React.createClass({
-	getInitialState(){
-		return ({product: null})
-	},
-  	render: function() {
+  getInitialState(){
+    return ({product: null})
+  },
+    render: function() {
     return (
-    	<div>
-	    	<ul>
-				<li>{this.props.name}</li><br/>
+      <div>
+        <ul>
+        <li>{this.props.name}</li><br/>
           <li><img src={require(this.props.image)}/></li>
-		    	<li>{this.props.description}</li>
+          <li>{this.props.description}</li>
           <li>{this.props.price}</li>
 	    	</ul>
-
     	</div>
     )
   }
@@ -309,7 +253,6 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
-      <Route path="menu" component={Menu} />
     </Route>
     <Route path="*" component={NotFound} />
   </Router>,
