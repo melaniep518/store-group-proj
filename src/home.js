@@ -32,15 +32,15 @@ var Carousel = React.createClass({
         {/*} Wrapper for slides */}
         <div className="carousel-inner" role="listbox">
           <div className="item active">
-            <img src="img_chania.jpg" alt="Chania">
+            <img src="img_chania.jpg" alt="Chania"/>
           </div>
 
           <div className="item">
-            <img src="img_chania2.jpg" alt="Chania">
+            <img src="img_chania2.jpg" alt="Chania"/>
           </div>
 
           <div className="item">
-            <img src="img_flower.jpg" alt="Flower">
+            <img src="img_flower.jpg" alt="Flower"/>
           </div>
 
         </div>
