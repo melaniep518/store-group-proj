@@ -52,8 +52,12 @@ let data = {
     ]
   };
 
-data.gallery = function() {
+data.getGallery = function() {
   return this.gallery
+}
+
+data.getData = function() {
+  return this;
 }
 
 export default data;
