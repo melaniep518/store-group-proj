@@ -114,15 +114,15 @@ var Nav = React.createClass({
 
 var Home = React.createClass({
     getInitialState(){
-    	return ({images:null})
-	},
-	componentWillMount(){
-		// this.setState({images:data.getImages()})
+      return ({images:null})
+  },
+  componentWillMount(){
+    // this.setState({images:data.getImages()})
     // console.log('images', data.getImages())
-	},
-	render: function() {
-		
-	  return (
+  },
+  render: function() {
+    
+    return (
       <div>
         <h1>Welcome To Our Gallery Website</h1>
         <h4>BROWSE AROUND TO SEE WHAT WE HAVE IN STORE FOR YOU.</h4>
@@ -192,23 +192,23 @@ var Home = React.createClass({
 })
 
 var Menu = React.createClass({
-	getInitialState(){
-		return ({menu:null,images: null})
-	},
-	componentWillMount(){
-		this.setState({menu: data.getMenu()})
+  getInitialState(){
+    return ({menu:null,images: null})
+  },
+  componentWillMount(){
+    this.setState({menu: data.getMenu()})
     this.setState({images:data.getImages()})
-	},
-  	render: function() {
-  	var arr= [];
+  },
+    render: function() {
+    var arr= [];
  //loops through data   
-   	for(var product in this.state.menu){
-   		arr.push(<h2>{product}</h2>)
-  		for(var i=0; i< this.state.menu[product].length;i++){
-  			arr.push(<MenuItem title= {product} name= {this.state.menu[product][i].name} price={this.state.menu[product][i].price} image={this.state.images[i]} description={this.state.menu[product][i].description} />)
+    for(var product in this.state.menu){
+      arr.push(<h2>{product}</h2>)
+      for(var i=0; i< this.state.menu[product].length;i++){
+        arr.push(<MenuItem title= {product} name= {this.state.menu[product][i].name} price={this.state.menu[product][i].price} image={this.state.images[i]} description={this.state.menu[product][i].description} />)
         console.log(this.state.images[i])
-  		}
-  	}
+      }
+    }
     return (
       <div>
         <h1>Welcome To Our Gallery Website</h1>
@@ -240,7 +240,7 @@ var Menu = React.createClass({
          {/*PRINTS ALL GALLERY*/}  
         {arr}
       </div>
-  		  
+        
 
       
     )
@@ -248,12 +248,12 @@ var Menu = React.createClass({
 })
 
 var About = React.createClass({
-	getInitialState(){
-		return({about:null})
-	},
-	componentWillMount(){
-		this.setState({about:data.getAbout()})
-	},
+  getInitialState(){
+    return({about:null})
+  },
+  componentWillMount(){
+    this.setState({about:data.getAbout()})
+  },
   render: function() {
     return (
       <div >
@@ -271,20 +271,20 @@ var About = React.createClass({
 })
 
 var MenuItem = React.createClass({
-	getInitialState(){
-		return ({product: null})
-	},
-  	render: function() {
+  getInitialState(){
+    return ({product: null})
+  },
+    render: function() {
     return (
-    	<div>
-	    	<ul>
-				<li>{this.props.name}</li><br/>
+      <div>
+        <ul>
+        <li>{this.props.name}</li><br/>
           <li><img src={require(this.props.image)}/></li>
-		    	<li>{this.props.description}</li>
+          <li>{this.props.description}</li>
           <li>{this.props.price}</li>
-	    	</ul>
+        </ul>
         
-    	</div>
+      </div>
     )
   }
 })
