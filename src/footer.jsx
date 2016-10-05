@@ -8,23 +8,23 @@ import 'bootstrap/dist/css/bootstrap.css';
 var Footer = React.createClass({
 	render: function () {
 		return (	
-			<div className="row">
+			<div className="row footerwalrus">
 				<div className="col-md-2">
-					<table className="table table-striped">
+					<table>
 						<tr>
 							<th>Team Members</th>
 						</tr>
 						<tr>
-							<td>Melanie </td>
+							<td>Melanie Williams</td>
 						</tr>
 						<tr>
 							<td>Dee Sterling</td>
 						</tr>
 						<tr>
-							<td>Luis</td>
+							<td>Luis Carbjal</td>
 						</tr>
 						<tr>
-							<td>Matt Jennings</td>
+							<td>Matt M. Jennings</td>
 						</tr>
 					</table>
 				</div>
@@ -39,4 +39,5 @@ var Footer = React.createClass({
 	}
 })
 
-ReactDOM.render(<Footer />, document.getElementById('root'))
+// ReactDOM.render(<Footer />, document.getElementById('root'))
+export default Footer;
