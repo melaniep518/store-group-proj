@@ -9,33 +9,39 @@ var Nav = React.createClass({
 
        { /*FIRST NAV*/}
       <nav className="navbar main">
-          <div className="logo">
+          <div className="logo col-xs-7">
             <a href="#">
              <img alt="Brand" src="http://adelantealliance.org/wp-content/uploads/2016/10/logo.jpeg"/>
             </a>
           </div>
-      
-          <div className="input-group">
-            <input type="text" className="form-control search" placeholder=" Quick Search"/>
-              <button className="btn btn-default go" type="button">Go!</button>
-          </div>
-
 
           {/*SOCIAL MEDIA*/}
+        <div className="socialSearch col-xs-5">
            <div className="social">
               <a className="media twitter" href="#">
-                <img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png"/>
+                <img src="http://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png"/>
               </a>
 
               <a className="media facebook" href="#">
-                <img src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/256/social_facebook_box_blue.png"/>
+                <img src="http://www.masterdor.co.uk/Content/svg/icon-facebook.svg"/>
+              </a>
+
+              <a className="media pinterest" href="#">
+                <img src="http://www.homeloans.com.au/wp-content/uploads/2015/10/social-media-icon-pinterest.png"/>
               </a>
 
               <a className="media instagram" href="#">
                 <img src="https://anneauweiler.files.wordpress.com/2014/04/icon-instagram.png"/>
               </a>
+
             </div>
-      </nav>
+
+            <div className="input-group">
+            <input type="text" className="form-control search" placeholder=" Quick Search"/>
+              <button className="btn btn-default go" type="button">Go!</button>
+          </div>
+      </div>
+    </nav>
 
       { /*SECOND NAV*/}
       <nav className="navbar navbar-default">
