@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {Router, Route, Link, hashHistory} from 'react-router'
 import 'bootstrap/dist/css/bootstrap.css';
 
 
