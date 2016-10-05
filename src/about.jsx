@@ -28,4 +28,4 @@ var About = React.createClass({
   }
 })
 
-export {About};
+export default About;
