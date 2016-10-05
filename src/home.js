@@ -64,35 +64,30 @@ var PageInfo = React.createClass({
     return(
       <div>
         <div class="row">
-          <div class="col-md-8">
-          </div>
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            {/* Indicators */}
+            <ol className="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-          <div class="col-md-4">
-          </div>
-
-      <div id="myCarousel" className="carousel slide" data-ride="carousel">
-        {/* Indicators */}
-        <ol className="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
         {/*} Wrapper for slides */}
-        <div className="carousel-inner" role="listbox">
-          <div className="item active">
-            <img src="img_chania.jpg" alt="Chania"/>
-          </div>
+          <div className="carousel-inner" role="listbox">
+            <div className="item active">
+              <img src="img_chania.jpg" alt="Chania"/>
+            </div>
 
-          <div className="item">
-            <img src="img_chania2.jpg" alt="Chania"/>
-          </div>
+            <div className="item">
+              <img src="img_chania2.jpg" alt="Chania"/>
+            </div>
 
-          <div className="item">
-            <img src="img_flower.jpg" alt="Flower"/>
+            <div className="item">
+              <img src="img_flower.jpg" alt="Flower"/>
+            </div>
           </div>
         </div>
-
 
         <div class="row">
           <div class="col-md-4">.col-md-4</div>
@@ -100,6 +95,8 @@ var PageInfo = React.createClass({
           <div class="col-md-4">.col-md-4</div>
         </div>
       </div>
+    </div>
+
     )
   }
 })
