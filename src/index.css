@@ -68,6 +68,8 @@ body {
     margin-left: 20px;
     margin-right: 30%;
     width: 30%;
+    display: block;
+    margin-top: 20px;
 }
 
 /*SEARCH BAR*/
@@ -101,8 +103,13 @@ body {
   font-family: "neutra-book",Helvetica;
 }
 
-.logo, .input-group, .social {
+.logo, .input-group{
   display: inline-block;
+}
+
+.social {
+  display: block;
+  float: right;
 }
 
 .twit{
@@ -119,6 +126,7 @@ body {
 .social .media img {
   width: 40px;
   height: 40px;
+  padding: 3px;
 }
 
 .navbar.main {
@@ -193,6 +201,5 @@ a.dropdown-toggle {
   transform:scale(1.5);
   transition: transform 500ms ease-in-out;
 }
-
 
 
