@@ -85,7 +85,7 @@ var PageInfo = React.createClass({
               </div>
             </div>
         </div>
-      </div>  
+      </div>
     )
   }
 })

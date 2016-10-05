@@ -6,17 +6,15 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 require('./index.css');
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+
 
 
 // Importing components
-import {Nav} from './nav';
-import {Home} from './homepage';
-import HomePage from './home'
-import {Sidebar} from './sidebar.jsx'
-import {MenuItem} from './menuitem'
-import About from './about'
-import NotFound from './notfound'
+import Nav from './nav.jsx';
+import Home from './home.jsx'
+import About from './about.jsx'
+import NotFound from './notfound.jsx'
+import Footer from './footer.jsx'
 
 var App = React.createClass({
   render: function() {
@@ -24,6 +22,7 @@ var App = React.createClass({
       <div>
           <Nav />
           {this.props.children}
+          <Footer />
       </div>
     )
   }
@@ -32,9 +31,8 @@ var App = React.createClass({
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={HomePage} />
+      <IndexRoute component={Home} />
       <Route path="about" component={About} />
-      <Route path="menu" component={Sidebar} />
     </Route>
     <Route path="*" component={NotFound} />
   </Router>,

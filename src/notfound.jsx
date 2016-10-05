@@ -10,4 +10,4 @@ var NotFound = React.createClass({
   }
 })
 
-export {NotFound};
+export default NotFound;

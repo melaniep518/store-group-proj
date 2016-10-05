@@ -96,5 +96,5 @@ var Nav = React.createClass({
   }
 })
 
-export {Nav};
+export default Nav;
 

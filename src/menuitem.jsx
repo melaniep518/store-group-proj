@@ -1,5 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 require('./index.css');
+import data from './data';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 var MenuItem = React.createClass({
@@ -18,4 +22,4 @@ var MenuItem = React.createClass({
   }
 })
 
-export {MenuItem};
+export default MenuItem;
