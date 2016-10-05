@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 
 
-var HomePage = React.createClass({
+var Home = React.createClass({
   render: function(){
     return(
       <div>
@@ -103,4 +103,4 @@ var PageInfo = React.createClass({
   }
 })
 
-export default HomePage;
+export default Home;
