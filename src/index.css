@@ -65,17 +65,28 @@ body {
   padding-bottom: 10px;
 }
 .input-group {
-    margin-left: 20px;
-    margin-right: 30%;
-    width: 30%;
+    /*margin-left: 115px;*/
+    margin-left: -30px;
+    /*margin-right: 10%;*/
+    width: 60%;
     display: block;
     margin-top: 20px;
+    width: 108%;
+    margin-top: -13px;
+    
 }
+.socialSearch {
+  display: flex;
+  justify-content: flex-end;
+  height: 150px;
+  flex-direction: column;
+  margin-top: -56px;
 
+}
 /*SEARCH BAR*/
 .input-group .search {
   width: 80%;
-  height: 45px;
+  height: 30px;
   border: 1px solid #000;
   padding: 0 0 0 36px;
   color: #000;
@@ -97,9 +108,10 @@ body {
   border: 1px solid #000;
 }
 
+  /*GO BUTTON*/
 .input-group .go {
   width: 20%;
-  height: 45px;
+  height: 30px;
   font-family: "neutra-book",Helvetica;
 }
 
@@ -107,9 +119,10 @@ body {
   display: inline-block;
 }
 
+
 .social {
-  display: block;
-  float: right;
+  margin-left: 256px;
+  height: 60px;
 }
 
 .twit{
@@ -202,4 +215,7 @@ a.dropdown-toggle {
   transition: transform 500ms ease-in-out;
 }
 
+/*.formControl {
+  height: 25px;
+}*/
 

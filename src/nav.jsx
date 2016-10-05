@@ -9,19 +9,14 @@ var Nav = React.createClass({
 
        { /*FIRST NAV*/}
       <nav className="navbar main">
-          <div className="logo">
+          <div className="logo col-xs-7">
             <a href="#">
              <img alt="Brand" src="http://adelantealliance.org/wp-content/uploads/2016/10/logo.jpeg"/>
             </a>
           </div>
-      
-          <div className="input-group">
-            <input type="text" className="form-control search" placeholder=" Quick Search"/>
-              <button className="btn btn-default go" type="button">Go!</button>
-          </div>
-
 
           {/*SOCIAL MEDIA*/}
+        <div className="socialSearch col-xs-5">
            <div className="social">
               <a className="media twitter" href="#">
                 <img src="http://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png"/>
@@ -40,7 +35,13 @@ var Nav = React.createClass({
               </a>
 
             </div>
-      </nav>
+
+            <div className="input-group">
+            <input type="text" className="form-control search" placeholder=" Quick Search"/>
+              <button className="btn btn-default go" type="button">Go!</button>
+          </div>
+      </div>
+    </nav>
 
       { /*SECOND NAV*/}
       <nav className="navbar navbar-default">
