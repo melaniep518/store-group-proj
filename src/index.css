@@ -1,3 +1,11 @@
+/*PageInfo in Home.js Styling*/
+.borderdivide{
+  display: flex;
+  border-style: grey solid;
+}
+
+
+
 html, body {
     margin-left: auto;
     margin-right: auto;
@@ -28,13 +36,13 @@ body {
  border: 1px solid black;
  margin: 10px;
  flex-grow: 1;
- 
+
 }
 
 
 .listGallery {
   align-items: center;
-  list-style:none; 
+  list-style:none;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -80,8 +88,8 @@ body {
   font-family: "neutra-book",Helvetica;
   font-weight: bold;
 }
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 600px){
     .input-group, .social {
     display: none !important;
@@ -193,6 +201,3 @@ a.dropdown-toggle {
   transform:scale(1.5);
   transition: transform 500ms ease-in-out;
 }
-
-
-
