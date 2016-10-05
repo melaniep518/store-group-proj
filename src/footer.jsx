@@ -24,7 +24,7 @@ var Footer = React.createClass({
 							<td>Luis Carbjal</td>
 						</tr>
 						<tr>
-							<td>Matt Jennings</td>
+							<td>Matt M. Jennings</td>
 						</tr>
 					</table>
 				</div>
