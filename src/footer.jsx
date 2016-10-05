@@ -9,7 +9,7 @@ var Footer = React.createClass({
 	render: function () {
 		return (	
 			<div className="row footerwalrus">
-				<div className="col-md-2">
+				<div className="col-md-3">
 					<table>
 						<tr>
 							<th>Team Members</th>
@@ -28,10 +28,10 @@ var Footer = React.createClass({
 						</tr>
 					</table>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-3">
 					<h5>31-00 47th Avenue #1105 Long Island City, NY 11101</h5>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-3">
 					<h5>Customer Service: 1-800-123-4567</h5>
 				</div>
 			</div>
