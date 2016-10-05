@@ -21,7 +21,7 @@ body {
   transition: transform 500ms ease-in-out;
 }
 
-.m{
+.itemGallery {
   display: inline-flex;
   justify-content: space-around;
  /* justify-content: space-around;*/
@@ -31,7 +31,8 @@ body {
  
 }
 
-.l {
+
+.listGallery {
   align-items: center;
   list-style:none; 
   width: 300px;

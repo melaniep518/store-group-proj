@@ -1,8 +1,7 @@
 import React from 'react';
-require('./index.css'); 
-import data from './data';
+import data from './data';  
 
-
+ {/*GALLERY COMPONENT & SIDEBAR*/}
 var Sidebar = React.createClass({
   getInitialState(){
     return ({menu:null,images: null})
@@ -15,16 +14,6 @@ var Sidebar = React.createClass({
     return (
       <div className="gallery">
 
-       {/* <h1>Welcome To Our Gallery Website</h1>
-        <h4>BROWSE AROUND TO SEE WHAT WE HAVE IN STORE FOR YOU.</h4>
-
-
-         *BOTTONS
-        <button>
-          <span className='glyphicon glyphicon-thumbs-up'></span>
-        </button>
-        <button type="button" className="btn btn-success">Success</button>
-       */}
           {/*SIDEBAR*/}  
         <table className ="table-bordered">
           <thead>
@@ -56,14 +45,27 @@ var Sidebar = React.createClass({
             </tr>
           </tbody>
         </table>
+
+
+
          {/*PRINTS ALL GALLERY*/}  
-          <div className="pictsConteiner">
+          <div>
             <ul>
-              {this.state.menu ? this.state.menu.map((item, indx) => <li>{item.title}</li>) : null}
-            </ul>
+             {this.state.menu ? this.state.menu.map((item, indx) => 
+              <div className="itemGallery">
+              <li className="listGallery">
+                {item.title}<br/>
+                <img src={require(item.img)}/><br/>
+                {item.price}
+              </li>
+              </div>
+              ) : null}
+             </ul>
           </div>
-      </div>      
+      </div>
+      
     )
   }
 })
- export {Sidebar};
+
+export {Sidebar};

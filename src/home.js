@@ -61,7 +61,7 @@ var PageInfo = React.createClass({
   render: function(){
     return(
       <div>
-        <div class="row">
+        <div className="row">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             {/* Indicators */}
             <ol className="carousel-indicators">
@@ -87,10 +87,10 @@ var PageInfo = React.createClass({
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4">.col-md-4</div>
+        <div className="row">
+          <div className="col-md-4">.col-md-4</div>
+          <div className="col-md-4">.col-md-4</div>
+          <div className="col-md-4">.col-md-4</div>
         </div>
       </div>
     </div>
@@ -98,6 +98,5 @@ var PageInfo = React.createClass({
     )
   }
 })
-
 
 export default HomePage;
