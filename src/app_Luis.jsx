@@ -196,8 +196,11 @@ var Menu = React.createClass({
 		return ({menu:null,images: null})
 	},
 	componentWillMount(){
-		this.setState({menu: data.getMenu()})
-    this.setState({images:data.getImages()})
+		this.setState({menu: data.getGallery()})
+
+    console.log("data", data)//only data works
+    console.log("gallery", this.state.menu)
+    this.setState({images:data.getGallery()})
 	},
   	render: function() {
   	var arr= [];

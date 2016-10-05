@@ -61,4 +61,6 @@ var Carousel = React.createClass({
 })
 
 
-export default Logo;
+
+export default HomePage;
+
