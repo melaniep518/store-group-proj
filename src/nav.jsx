@@ -13,7 +13,7 @@ var Nav = React.createClass({
       <nav className="navbar main">
           <div className="logo col-xs-5">
             <a href="#" className="logoWidth">
-             <img alt="Brand" src="http://adelantealliance.org/wp-content/uploads/2016/10/logo.jpeg"/>
+             <img src= "http://i67.tinypic.com/35cisyg.jpg" />
             </a>
           </div>
 
@@ -40,16 +40,16 @@ var Nav = React.createClass({
 
             <div className="input-group">
             <input type="text" className="form-control search" placeholder=" Quick Search"/>
-              <button className="btn btn-default go" type="button">Go!</button>
+              <button className="btn btn-default go" type="button">Search</button>
           </div>
-          <p to="/" className="hours">TODAY'S HOURS: 10:00 AM - 6:00PM  |</p>
+          <p to="/" className="hours">TODAY'S HOURS: 10 a.m. - 6 p.m. </p>
            {/*ADDING LOGIN BUTTON          <div className="email_login">
             <Link to="/" className="glyphicon glyphicon-list-alt">Wish List  |</Link>
             <Link to="/" className="glyphicon glyphicon-heart">Like |</Link>
-            <Link to="/" className="glyphicon glyphicon-envelope">Email  |</Link> 
+            <Link to="/" className="glyphicon glyphicon-envelope">Email  |</Link>
             <Link to="/" className="glyphicon glyphicon-pencil">Signup </Link>
-            <li ><Link to="/" className="glyphicon glyphicon-lock">Login</Link></li> 
-          </div> 
+            <li ><Link to="/" className="glyphicon glyphicon-lock">Login</Link></li>
+          </div>
           */}
 
       </div>
@@ -63,7 +63,7 @@ var Nav = React.createClass({
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
 
-              
+
               <li className="linetext"><Link to="menu">Home</Link></li>
               <li className="linetext"><Link to="/gallery/cat" params={{animal: "cat"}}>Cat</Link></li>
               <li className="linetext"><Link to="/gallery/dragon" params={{animal: "dragon"}}>Dragon</Link></li>
@@ -81,24 +81,24 @@ var Nav = React.createClass({
                 </ul>
               </li>
             </ul>
-            
+
 
 
              {/*RIGHT NAV**/}
             <ul className="nav navbar-nav navbar-right">
               <li ><Link to="login" className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
-                
-                
+
+
               <li ><Link to="menu" className="glyphicon glyphicon-shopping-cart">Cart</Link></li>
 
-           
-        
-             
+
+
+
             </ul>
-             
+
           </div>{ /*/.navbar-collapse */}
         </div>{ /*/.container-fluid */}
-      </nav> 
+      </nav>
 
     </div>
     )
@@ -106,4 +106,3 @@ var Nav = React.createClass({
 })
 
 export default Nav;
-

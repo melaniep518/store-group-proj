@@ -6,7 +6,7 @@ html, body {
   }
 
 body {
-    padding-top: 0px;
+    padding-top: 10px;
 
 
   }
@@ -15,7 +15,6 @@ body {
       padding-top: 0;
     }
   }
-
 
 
 .gallery img{
@@ -114,7 +113,7 @@ body {
 }
 
 .email_login {
-  text-decoration: none;  
+  text-decoration: none;
   margin-left: 267px;
   width: 78%;
   display: inherit;
@@ -125,7 +124,7 @@ body {
 /*
 not working*/
 .glyphicon-heart {
-  text-decoration: none!important; 
+  text-decoration: none!important;
 }
 
 .logo, .input-group{
