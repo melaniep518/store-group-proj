@@ -65,19 +65,19 @@ var Nav = React.createClass({
 
               
               <li className="linetext"><Link to="menu">Home</Link></li>
-              <li className="linetext"><Link to="/gallery/cat" params={{animal: "cat"}}>Cat</Link></li>
-              <li className="linetext"><Link to="/gallery/dragon" params={{animal: "dragon"}}>Dragon</Link></li>
-              <li className="linetext"><Link to="/gallery/giraffe" params={{animal: "giraffe"}}>Giraffe</Link></li>
-              <li className="linetext"><Link to="/gallery/unicorn" params={{animal: "unicorn"}}>Unicorn</Link></li>
-              <li className="linetext"><Link to="/gallery/walrus" params={{animal: "walrus"}}>Walrus</Link></li>
+              <li className="linetext"><Link to="/gallery/cat" params={{search: "cat"}}>Cat</Link></li>
+              <li className="linetext"><Link to="/gallery/dragon" params={{search: "dragon"}}>Dragon</Link></li>
+              <li className="linetext"><Link to="/gallery/giraffe" params={{search: "giraffe"}}>Giraffe</Link></li>
+              <li className="linetext"><Link to="/gallery/unicorn" params={{search: "unicorn"}}>Unicorn</Link></li>
+              <li className="linetext"><Link to="/gallery/walrus" params={{search: "walrus"}}>Walrus</Link></li>
 
 
               <li className="dropdown">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category <span className="caret"></span></a>
                 <ul className="dropdown-menu">
-                  <li><Link to="about">Funny</Link></li>
-                  <li><Link to="about">Eerie</Link></li>
-                  <li><Link to="about">Weird</Link></li>
+                  <li><Link to="/gallery/funny" params={{search: "funny"}}>Funny</Link></li>
+                  <li><Link to="/gallery/eerie" params={{search: "eerie"}}>Eerie</Link></li>
+                  <li><Link to="/gallery/weird" params={{search: "weird"}}>Weird</Link></li>
                 </ul>
               </li>
             </ul>
@@ -86,7 +86,7 @@ var Nav = React.createClass({
 
              {/*RIGHT NAV**/}
             <ul className="nav navbar-nav navbar-right">
-              <li ><Link to="login" className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
+              <li ><Link to="/gallery/all" params={{search: "all"}} className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
                 
                 
               <li ><Link to="menu" className="glyphicon glyphicon-shopping-cart">Cart</Link></li>

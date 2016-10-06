@@ -6,11 +6,18 @@ import MenuItem from './menuitem';
 
 var Gallery = React.createClass({
 	generateMenuItems: function(gallery, props) {
-		var animal = props.params.animal;
-		var targetArray = gallery.filter(function (ele, ind, arr) {
-			return arr[ind].animal == animal;
-		})
+		var search = props.params.search;
+		var targetArray = [];
 		var itemArray = [];
+
+		if (search == "cat" || search == "unicorn" || search == "giraffe" || search == "dragon" || search == "walrus") {
+			targetArray = gallery.filter((ele, ind, arr) => {return arr[ind].animal == search;})
+		} else if (search == "eerie" || search == "funny" || search == "weird") {
+			targetArray = gallery.filter((ele, ind, arr) => {return arr[ind].adj == search;})
+		} else if (search == "all") {
+			targetArray = gallery;
+		}
+
 		targetArray.forEach((ele, ind, arr) => {
 			itemArray.push(<MenuItem info={ele} />)
 		})

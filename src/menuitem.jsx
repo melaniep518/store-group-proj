@@ -11,7 +11,7 @@ var MenuItem = React.createClass({
     return (
       <div className="m">
         <div className="l">
-        <li><h4>{this.props.info.name}</h4></li><br/>
+        <li><h4>{this.props.info.title}</h4></li><br/>
           <li><img src={require(this.props.info.img)}/></li>
           <p className="description">{this.props.info.description}</p>
           <li>{this.props.info.price}</li>
