@@ -1,0 +1,22 @@
+.info {
+    padding: 7px;
+    border: 10px solid lightgrey;
+    flex-grow: 1;
+    order: 0;
+}
+
+.info .img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+
+.info-box{
+  margin-top: 40px;
+  display: flex;
+}
+
+.info-page{
+    display: flex;
+}
