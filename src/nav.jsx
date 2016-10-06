@@ -9,14 +9,14 @@ var Nav = React.createClass({
 
        { /*FIRST NAV*/}
       <nav className="navbar main">
-          <div className="logo col-xs-7">
-            <a href="#">
+          <div className="logo col-xs-5">
+            <a href="#" className="logoWidth">
              <img alt="Brand" src="http://adelantealliance.org/wp-content/uploads/2016/10/logo.jpeg"/>
             </a>
           </div>
 
           {/*SOCIAL MEDIA*/}
-        <div className="socialSearch col-xs-5">
+        <div className="socialSearch col-xs-7">
            <div className="social">
               <a className="media twitter" href="#">
                 <img src="http://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png"/>
@@ -40,30 +40,28 @@ var Nav = React.createClass({
             <input type="text" className="form-control search" placeholder=" Quick Search"/>
               <button className="btn btn-default go" type="button">Go!</button>
           </div>
+           {/*ADDING LOGIN BUTTON*/}
+          <div className="email_login">
+            <Link to="/" className="glyphicon glyphicon-list-alt">Wish List  |</Link>
+            <Link to="/" className="glyphicon glyphicon-heart">Like |</Link>
+            <Link to="/" className="glyphicon glyphicon-envelope">Email  |</Link> 
+            <Link to="/" className="glyphicon glyphicon-pencil">Signup </Link>
+            <li ><Link to="/" className="glyphicon glyphicon-lock">Login</Link></li> 
+          </div> 
       </div>
-    </nav>
+      </nav>
 
       { /*SECOND NAV*/}
       <nav className="navbar navbar-default">
         <div className="container-fluid">
-          { /* Brand and toggle get grouped for better mobile display*/}
-          <div className="navbar-header">
-
-
-             {/*TOGGLE BOTTON SHRINKS*/}
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-              <Link to="/">Home</Link>
-          </div>
 
           { /*Collect the nav links, forms, and other content for toggling */}
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
-              <li className="linetext"><Link to="/">Cat</Link><span className="sr-only">(current)</span></li>
+
+              
+              <li className="linetext"><Link to="menu">Home</Link></li>
+              <li className="linetext"><Link to="menu">Cat</Link></li>
               <li className="linetext"><Link to="menu">Dragon</Link></li>
               <li className="linetext"><Link to="about">Giraffe</Link></li>
               <li className="linetext"><Link to="menu">Unicorn</Link></li>
@@ -71,7 +69,7 @@ var Nav = React.createClass({
 
 
               <li className="dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search by category <span className="caret"></span></a>
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category <span className="caret"></span></a>
                 <ul className="dropdown-menu">
                   <li><Link to="about">Funny</Link></li>
                   <li><Link to="about">Eerie</Link></li>
@@ -82,17 +80,18 @@ var Nav = React.createClass({
             
 
 
-             {/*RIGHT NAV*/}
+             {/*RIGHT NAV**/}
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
+              <li ><Link to="login" className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
                 
-                {/*CART*/}
+                
               <li ><Link to="menu" className="glyphicon glyphicon-shopping-cart">Cart</Link></li>
 
-
+           
         
              
             </ul>
+             
           </div>{ /*/.navbar-collapse */}
         </div>{ /*/.container-fluid */}
       </nav> 
