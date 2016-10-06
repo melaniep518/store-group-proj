@@ -20,19 +20,19 @@ var Nav = React.createClass({
           {/*SOCIAL MEDIA*/}
         <div className="socialSearch col-xs-7">
            <div className="social">
-              <a className="media twitter" href="#">
+              <a className="media twitter" href="https://twitter.com/">
                 <img src="http://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png"/>
               </a>
 
-              <a className="media facebook" href="#">
+              <a className="media facebook" href="https://www.facebook.com">
                 <img src="http://www.masterdor.co.uk/Content/svg/icon-facebook.svg"/>
               </a>
 
-              <a className="media pinterest" href="#">
+              <a className="media pinterest" href="https://pinterest.com/">
                 <img src="http://www.homeloans.com.au/wp-content/uploads/2015/10/social-media-icon-pinterest.png"/>
               </a>
 
-              <a className="media instagram" href="#">
+              <a className="media instagram" href="https://www.instagram.com/?hl=en">
                 <img src="https://anneauweiler.files.wordpress.com/2014/04/icon-instagram.png"/>
               </a>
 
@@ -42,14 +42,16 @@ var Nav = React.createClass({
             <input type="text" className="form-control search" placeholder=" Quick Search"/>
               <button className="btn btn-default go" type="button">Go!</button>
           </div>
-           {/*ADDING LOGIN BUTTON*/}
-          <div className="email_login">
+          <p to="/" className="hours">TODAY'S HOURS: 10:00 AM - 6:00PM  |</p>
+           {/*ADDING LOGIN BUTTON          <div className="email_login">
             <Link to="/" className="glyphicon glyphicon-list-alt">Wish List  |</Link>
             <Link to="/" className="glyphicon glyphicon-heart">Like |</Link>
             <Link to="/" className="glyphicon glyphicon-envelope">Email  |</Link> 
             <Link to="/" className="glyphicon glyphicon-pencil">Signup </Link>
             <li ><Link to="/" className="glyphicon glyphicon-lock">Login</Link></li> 
           </div> 
+          */}
+
       </div>
       </nav>
 
