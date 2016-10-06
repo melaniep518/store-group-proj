@@ -86,15 +86,11 @@ var Nav = React.createClass({
 
              {/*RIGHT NAV**/}
             <ul className="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-              <li ><Link to="login" className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
 
-
-=======
               <li ><Link to="/gallery/all" params={{search: "all"}} className="glyphicon glyphicon-circle-arrow-up">Gallery</Link></li>
-                
-                
->>>>>>> afe63c5a64d95cc4bf68cc6af4d42fd47980140d
+
+
+
               <li ><Link to="menu" className="glyphicon glyphicon-shopping-cart">Cart</Link></li>
 
 
