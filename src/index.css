@@ -73,22 +73,19 @@ body {
   padding-bottom: 10px;
 }
 .input-group {
-    /*margin-left: 115px;*/
-    margin-left: -30px;
     /*margin-right: 10%;*/
-    width: 60%;
+    margin-left: 134px;
+    width: 80%;
     display: block;
     margin-top: 20px;
-    width: 108%;
-    margin-top: -13px;
-    
+    margin-top: -6px;
 }
 .socialSearch {
   display: flex;
   justify-content: flex-end;
   height: 150px;
   flex-direction: column;
-  margin-top: -56px;
+  margin-top: -52px;  /*change rightTop container*/
 
 }
 /*SEARCH BAR*/
@@ -111,8 +108,6 @@ body {
 
 /*SEARCH BUTTON*/
 .go{
-  /*background-color: orange;*/
-  /*font-weight: bold;*/
   border: 1px solid #000;
 }
 
@@ -123,14 +118,31 @@ body {
   font-family: "neutra-book",Helvetica;
 }
 
+.email_login {
+  text-decoration: none;  
+  margin-left: 267px;
+  width: 78%;
+  display: inherit;
+  margin-top: 8px;
+  margin-bottom: -24px;
+}
+
+/*
+not working*/
+.glyphicon-heart {
+  text-decoration: none!important; 
+}
+
 .logo, .input-group{
   display: inline-block;
 }
-
+.a.logoWidth {
+  width: 300px;
+}
 
 .social {
-  margin-left: 256px;
-  height: 60px;
+  margin-left: 440px;
+  height: 50px;
 }
 
 .twit{
@@ -150,10 +162,10 @@ body {
   padding: 3px;
 }
 
-.navbar.main {
+/*.navbar.main {
   margin-bottom: 0px;
 
-}
+}*/
 
 
 .description {
@@ -164,13 +176,14 @@ body {
 
 /*STYLES SEARCH BY CATEGORY*/
 .container-fluid {
-    font-size: 16px;
-    font-style: italic;
-    /* font-variant-caps: inherit; */
-    /* font-family: initial; */
-    font-weight: bolder;
-    /* color: black; */
-    text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: rgba(12, 248, 248, 0.43);
+  /*background-color: rgba(12, 183, 248, 0.15);
+  background-color: rgba(255, 0, 141, 0.77);
+  background-color: rgba(37, 248, 12, 0.67);*/
 }
 
 /*STYLES NAV RIGHT*/
@@ -214,6 +227,11 @@ a.dropdown-toggle {
   color: black !important;
 }
 
+/*adding hover*/
+.navbar-default .navbar-nav > li > a:hover {
+    background-color:#e6e6ff;  /*#ff00ff;*/ /* #0066ff;*/
+
+}
 .navbar-default .navbar-nav > li > a {
     color: #333;
 }
@@ -222,3 +240,4 @@ a.dropdown-toggle {
   transform:scale(1.5);
   transition: transform 500ms ease-in-out;
 }
+
