@@ -11,12 +11,11 @@ var MenuItem = React.createClass({
     return (
       <div className="m">
         <div className="l">
-        <li><h4>{this.props.name}</h4></li><br/>
-          <li><img src={require(this.props.image)}/></li>
-          <p className="description">{this.props.description}</p>
-          <li>{this.props.price}</li>
-        </div>
-        
+        <li><h4>{this.props.info.name}</h4></li><br/>
+          <li><img src={require(this.props.info.img)}/></li>
+          <p className="description">{this.props.info.description}</p>
+          <li>{this.props.info.price}</li>
+        </div>  
       </div>
     )
   }

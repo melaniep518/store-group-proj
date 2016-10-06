@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import {Link} from 'react-router';
 
 {/*NAVIGATION BAR*/}
@@ -61,11 +63,11 @@ var Nav = React.createClass({
 
               
               <li className="linetext"><Link to="menu">Home</Link></li>
-              <li className="linetext"><Link to="menu">Cat</Link></li>
-              <li className="linetext"><Link to="menu">Dragon</Link></li>
-              <li className="linetext"><Link to="about">Giraffe</Link></li>
-              <li className="linetext"><Link to="menu">Unicorn</Link></li>
-              <li className="linetext"><Link to="about">Walrus</Link></li>
+              <li className="linetext"><Link to="/gallery/cat" params={{animal: "cat"}}>Cat</Link></li>
+              <li className="linetext"><Link to="/gallery/dragon" params={{animal: "dragon"}}>Dragon</Link></li>
+              <li className="linetext"><Link to="/gallery/giraffe" params={{animal: "giraffe"}}>Giraffe</Link></li>
+              <li className="linetext"><Link to="/gallery/unicorn" params={{animal: "unicorn"}}>Unicorn</Link></li>
+              <li className="linetext"><Link to="/gallery/walrus" params={{animal: "walrus"}}>Walrus</Link></li>
 
 
               <li className="dropdown">
