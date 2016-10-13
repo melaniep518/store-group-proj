@@ -42,7 +42,7 @@ var Nav = React.createClass({
             <input type="text" className="form-control search" placeholder=" Quick Search"/>
               <button className="btn btn-default go" type="button">Search</button>
           </div>
-          <p to="/" className="hours">TODAY'S HOURS: 10 a.m. - 6 p.m. </p>
+          <p to="/" className="hours">TODAY'S HOURS: 10am - 6pm </p>
            {/*ADDING LOGIN BUTTON          <div className="email_login">
             <Link to="/" className="glyphicon glyphicon-list-alt">Wish List  |</Link>
             <Link to="/" className="glyphicon glyphicon-heart">Like |</Link>
@@ -64,7 +64,7 @@ var Nav = React.createClass({
             <ul className="nav navbar-nav">
 
 
-              <li className="linetext"><Link to="menu">Home</Link></li>
+              <li className="linetext"><Link to="/">Home</Link></li>
               <li className="linetext"><Link to="/gallery/cat" params={{search: "cat"}}>Cat</Link></li>
               <li className="linetext"><Link to="/gallery/dragon" params={{search: "dragon"}}>Dragon</Link></li>
               <li className="linetext"><Link to="/gallery/giraffe" params={{search: "giraffe"}}>Giraffe</Link></li>
