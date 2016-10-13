@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import MenuItem from './menuitem';
+import {Details} from './detailmodal.jsx'
 
 var Gallery = React.createClass({
 	generateMenuItems: function(gallery, props) {
@@ -19,7 +20,12 @@ var Gallery = React.createClass({
 		}
 
 		targetArray.forEach((ele, ind, arr) => {
-			itemArray.push(<MenuItem info={ele} />)
+			itemArray.push(
+				<div>
+					<MenuItem key={'item_'+ind} info={ele}/>
+					<Details key={'modal_'+ind} info={ele}/>
+				</div>
+			)
 		})
 		this.setState({shownItems: itemArray})
 	},
