@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import MenuItem from './menuitem';
+require ('./gallery.css')
 import {Details} from './detailmodal.jsx'
+
 
 var Gallery = React.createClass({
 	generateMenuItems: function(gallery, props) {
@@ -36,10 +38,10 @@ var Gallery = React.createClass({
 		var gallery = data.getGallery()
 		this.setState({gallery: gallery})
 		this.generateMenuItems(gallery, this.props);
-	}, 
+	},
 	componentWillReceiveProps: function (nextProps) {
 		this.generateMenuItems(this.state.gallery, nextProps);
-		
+
 	},
 	render: function () {
 		return (
