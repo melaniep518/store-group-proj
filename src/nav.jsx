@@ -42,7 +42,7 @@ var Nav = React.createClass({
             <input type="text" className="form-control search" placeholder=" Quick Search"/>
               <button className="btn btn-default go" type="button">Search</button>
           </div>
-          <p to="/" className="hours">TODAY'S HOURS: 10am - 6pm </p>
+          <p to="/" className="hours">TODAY'S HOURS: 10am-6pm </p>
            {/*ADDING LOGIN BUTTON          <div className="email_login">
             <Link to="/" className="glyphicon glyphicon-list-alt">Wish List  |</Link>
             <Link to="/" className="glyphicon glyphicon-heart">Like |</Link>

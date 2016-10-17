@@ -4,19 +4,11 @@
     flex-grow: 1;
     order: 0;
 }
-
-
-
 .info-box{
   margin-top: 40px;
   display: flex;
 }
 
 .info-page{
-    display: flex;
-}
-
-/*Footer CSS*/
-.footer-info{
     display: flex;
 }

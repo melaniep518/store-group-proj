@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
-require('./index.css');
+require('./gallery.css');
 require("./home.css")
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,7 +12,7 @@ var Footer = React.createClass({
 
 		<div className="footer-box">
 				<div className="footer-info" width="100">
-						<div className="credits">
+						<div className="creditsOne">
 							<h6>Art Dealers</h6>
 							<li>Madame Melanie Williams</li>
 							<li>Madame Dee Sterling</li>
@@ -27,15 +27,16 @@ var Footer = React.createClass({
 						<div className="credits">
 							<h5>31-00 47th Avenue #1105 Long Island City, NY 11101</h5>
 						</div>
+					</div>
 
-						<div className="footer-color">
-								<div class= "footer-credits">
+
+
+					<div className="footer-color">
+								<div className= "footer-credits">
 									<p>Copyright 2016 Amazing Art Gallery / Coalition For Queens</p>
 								</div>
 						</div>
-
-				</div>
-			</div>
+					</div>
 		)
 	}
 });
