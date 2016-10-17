@@ -1,13 +1,49 @@
+.l img {
+  width: 350px;
+  height: 300px;
+}
+
+.l h4{
+  font-size: 20px;
+}
+
 li{
 list-style-type: none;
 }
 
-.img {
-    position: relative;
-    float: left;
-    width:  100px;
-    height: 100px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+/*Footer CSS*/
+
+.footer-box{
+  padding: 50px;
+}
+.footer-info .credits{
+  display: flex;
+  flex-grow: 1;
+  align-self: auto;
+  padding: 7px;
+}
+
+.footer-box .footer-info .creditsOne{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-self: auto;
+  padding: 7px;
+  border: 2px solid grey;
+}
+
+.footer-info .credits img{
+  height: 225px;
+  width: 225px;
+}
+
+
+.footer-color{
+  display: flex;
+  flex-grow: 1;
+  background-color: #9400D3;
+  flex-direction: row;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  color: white;
 }

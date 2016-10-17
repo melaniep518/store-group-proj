@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import MenuItem from './menuitem';
-require ('./gallery.css')
 import {Details} from './detailmodal.jsx'
 
 
